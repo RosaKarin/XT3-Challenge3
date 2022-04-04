@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: pink;
+    background-image: url(Evening.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#map {
+    height: 83vh;
+    /* width: 97vw; */
+    /* width: 50%; */
+    /* position: right; */
+    display: inline-flex;
+    
+  }
+
+.grid-container {
+    display: grid;
+    gap: 30px;
+    padding: 15px;
+}
+
+.grid-item-header {
+    background-color: white;
+    /* padding: 20px; */
+    text-align: center;
+    border-radius: 5px;
+}
+
+.grid-item {
+    /* border: solid pink; */
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.grid-item-2 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    /* width: 50%; */
+    
+}
+
+h3, h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: black;
+    z-index: 999;
+}
+
+p, form{
+    font-Family: 'Open Sans', Sans-Serif;
+    color: black;
+}
+
+.glass { 
+    background: white;
+    background: linear-gradient(to right bottom, 
+    rgba(255, 255, 255, 0.7), 
+    rgba(255, 255, 255, 0.3));
+    border-radius: 5px;
+}
+
+.maptext {
+    background:rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    height: 40px;
+    border: 8px;
+}
+
+fieldset {
+    border: none;
+}
+
+#getWeather, #city {
+    margin-top: 10px;
+}
