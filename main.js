@@ -24,7 +24,7 @@ map.addControl(new mapboxgl.NavigationControl()); //zorgt voor inzoom/uitzoom co
 // // map.addControl(new mapboxgl.NavigationControl()); 
 
 // Set api token
-mapboxgl.accessToken = 'pk.eyJ1Ijoicm9zYWthcmluIiwiYSI6ImNrOHI4Njh1djAwbmYzZnFmbTB5M2s3ZmcifQ.NqmAg6EdHGHjWpmsr2XxgQ';
+// mapboxgl.accessToken = 'pk.eyJ1Ijoicm9zYWthcmluIiwiYSI6ImNrOHI4Njh1djAwbmYzZnFmbTB5M2s3ZmcifQ.NqmAg6EdHGHjWpmsr2XxgQ';
 
 // // Initialate map
 // var map = new mapboxgl.Map({
@@ -71,5 +71,7 @@ var marker = new mapboxgl.Marker()
   .setLngLat([6.56667, 53.21917])
   .setPopup(popup)
   .addTo(map);
+
+  
 
 
