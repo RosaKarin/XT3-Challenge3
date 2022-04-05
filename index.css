@@ -5,20 +5,35 @@
 }
 
 body {
-    background-color: pink;
     background-image: url(Evening.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-areas:
+        "header"
+        "field"
+        "map";    
 }
 
 #map {
-    height: 83vh;
-    /* width: 97vw; */
-    /* width: 50%; */
-    /* position: right; */
+    grid-area: map;
     display: inline-flex;
-    
-  }
+    height: 87vh;
+}
+
+#header {
+    grid-area: header;
+}
+
+#field {
+    grid-area: field;
+}
 
 .grid-container {
     display: grid;
@@ -28,13 +43,11 @@ body {
 
 .grid-item-header {
     background-color: white;
-    /* padding: 20px; */
     text-align: center;
     border-radius: 5px;
 }
 
 .grid-item {
-    /* border: solid pink; */
     background-color: white;
     padding: 20px;
     border-radius: 5px;
@@ -42,10 +55,9 @@ body {
 
 .grid-item-2 {
     background-color: white;
-    padding: 20px;
+    padding-top: 20px;
     border-radius: 5px;
-    /* width: 50%; */
-    
+    text-align: center;
 }
 
 h3, h4{
@@ -63,7 +75,7 @@ p, form{
 .glass { 
     background: white;
     background: linear-gradient(to right bottom, 
-    rgba(255, 255, 255, 0.7), 
+    rgba(255, 255, 255, 0.6), 
     rgba(255, 255, 255, 0.3));
     border-radius: 5px;
 }
@@ -79,6 +91,86 @@ fieldset {
     border: none;
 }
 
-#getWeather, #city {
-    margin-top: 10px;
+.veld1  {
+    padding: 8px;
+    opacity: 80%;
+    border: none;
+    border-radius: 3px;
+}
+
+.button1  {
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+}
+
+article {
+    margin-left: 12px;
+    padding: 8px;
+}
+
+/* Mobile
+@media only screen and (max-width: 600px) {} */
+
+/*Tablet*/
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    body {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-areas:
+            "header"
+            "field"
+            "map";    
+    }
+
+    #map {
+        height: 81vh;
+    }
+}
+
+/* Laptop (kleine desktop)*/
+@media only screen and (min-width: 1024px) and (max-width: 1598px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "field map";    
+    }
+
+    body {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+
+    #field {
+        margin-top: 40%;
+        margin-bottom: 145%;
+        justify-content: center;
+    }
+}
+
+
+/*Grote desktop*/
+@media only screen and (min-width: 1599px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "field map";    
+    }
+
+    body {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
 }

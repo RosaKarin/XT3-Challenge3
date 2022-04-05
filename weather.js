@@ -53,3 +53,13 @@ document.getElementById('getWeather').onclick = function(){
 	// init data stream
 	getAPIdata();
 };
+
+
+ 
+// // Add the control to the map.
+// map.addControl(
+// new MapboxGeocoder({
+// accessToken: mapboxgl.accessToken,
+// mapboxgl: mapboxgl
+// })
+// );
